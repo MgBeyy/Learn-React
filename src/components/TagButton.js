@@ -1,5 +1,5 @@
 import "../Styles/TagButtonStyle.css";
 
-export default function TagButton() {
-  return <button className="tagButton">Tag Button</button>;
+export default function TagButton({ children }) {
+  return <button className="tagButton">{children}</button>;
 }

@@ -1,4 +1,4 @@
-export default function Post() {
+export default function Post({ Title, Body }) {
   return (
     <div
       style={{
@@ -9,9 +9,9 @@ export default function Post() {
         textAlign: "center",
       }}
     >
-      <h2>This is the post title</h2>
+      <h2>{Title}</h2>
       <hr />
-      <p>This is the post body</p>
+      <p>{Body}</p>
     </div>
   );
 }
