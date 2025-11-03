@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 export default function Post({ Title, Body }) {
+  const [newBody, setBody] = useState(Body);
+  function changeBody() {
+    if (newBody === Body) setBody("new Body");
+    else setBody(Body);
+  }
   return (
     <div
       style={{
@@ -11,7 +18,8 @@ export default function Post({ Title, Body }) {
     >
       <h2>{Title}</h2>
       <hr />
-      <p>{Body}</p>
+      <p>{newBody}</p>
+      <button onClick={changeBody}>Click Me!</button>
     </div>
   );
 }
