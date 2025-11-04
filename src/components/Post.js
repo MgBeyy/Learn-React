@@ -6,6 +6,11 @@ export default function Post({ Title, Body }) {
     if (newBody === Body) setBody("new Body");
     else setBody(Body);
   }
+  const [input, setInput] = useState("");
+  function handleInput(e) {
+    setInput(e.target.value);
+  }
+
   return (
     <div
       style={{
@@ -19,7 +24,10 @@ export default function Post({ Title, Body }) {
       <h2>{Title}</h2>
       <hr />
       <p>{newBody}</p>
-      <button onClick={changeBody}>Click Me!</button>
+      <button style={{ margin: 10 }} onClick={changeBody}>
+        Click Me!
+      </button>
+      <input value={input} onChange={handleInput} />
     </div>
   );
 }
