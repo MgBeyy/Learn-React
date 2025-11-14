@@ -1,7 +1,10 @@
-import Form from "./components/Form";
+// import Form from "./components/Form";
+import Metarial from "./components/Metarial";
+
 function App() {
   return (
-    <div
+    <>
+      {/* <div
       style={{
         backgroundColor: "darkblue",
         display: "flex",
@@ -11,7 +14,9 @@ function App() {
       }}
     >
       <Form />
-    </div>
+    </div> */}
+      <Metarial />
+    </>
   );
 }
 
