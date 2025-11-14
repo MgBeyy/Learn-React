@@ -53,6 +53,8 @@ export default function Form() {
     >
       {isSubmit && <SuccessAlert onClick={() => setIsSubmit(false)} />}
       <form className="form" onChange={handleFormChange} onSubmit={submitForm}>
+        <h1>Test Form</h1>
+        <h4>Fill Form with valid data to submit</h4>
         <label className="input">
           Name:
           <input name="name" type="text" value={data.name} />

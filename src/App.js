@@ -3,7 +3,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: "purple",
+        backgroundColor: "darkblue",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
